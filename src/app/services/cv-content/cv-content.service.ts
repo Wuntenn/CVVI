@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ContentItem } from 'src/app/sectionComponents/content-item';
 import { DescriptionComponent } from 'src/app/sectionComponents/description/description.component';
+import { EducationalComponent } from 'src/app/sectionComponents/educational/educational.component';
+import { EmploymentComponent } from 'src/app/sectionComponents/employment/employment.component';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +12,9 @@ export class CvContentService {
     return {
       cvOwner: '',
       contactDetails: {
-        websites: [],
-        emails: [],
-        phoneNumers: []      
+        websites: ['https://www.daronjones.com', 'https://www.linkedin.com/in/daronjones'],
+        emails: ['daronalerts@gmail.com'],
+        phoneNumers: ['+44 (0) 7852 367 400']      
       },
       sections:{
         summary: new ContentItem('Summary', DescriptionComponent, { descriptionContent: [
@@ -50,7 +52,7 @@ export class CvContentService {
           domain: 'Other',
           knowledge: ['MQL, C++, Ruby, Ruby on Rails']
         }]}),
-        education: new ContentItem('Education', DescriptionComponent, { educationalContent: [{
+        education: new ContentItem('Education', EducationalComponent, { educationalContent: [{
           yearStarted: 1999,
           yearFinished: 2004,
           Accreditation: 'BSc Applied Computing',
@@ -75,7 +77,7 @@ export class CvContentService {
           'Fits the Myer-Briggs personality profile INFJ comprising only 1% of the population. (see: https://bit.ly/369u6K1).',
           'Would be a great addition to a diverse, detail-oriented, creative team!',
         ]}),
-        employments: new ContentItem('Employment Summary', DescriptionComponent, { employmentContent: [{
+        employments: new ContentItem('Employment Summary', EmploymentComponent, { employmentContent: [{
           tenureBegan: new Date(2021, 8),
           tenureEnded: new Date(2023, 1),
           employer: 'Asite Solutions Ltd',
