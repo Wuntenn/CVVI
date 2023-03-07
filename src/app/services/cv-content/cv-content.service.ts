@@ -10,7 +10,8 @@ import { EmploymentComponent } from 'src/app/sectionComponents/employment/employ
 export class CvContentService {
   getCVContents() {
     return {
-      cvOwner: '',
+      version: 'v0.0.1',
+      cvOwner: 'Daron Jones',
       contactDetails: {
         websites: ['https://www.daronjones.com', 'https://www.linkedin.com/in/daronjones'],
         emails: ['daronalerts@gmail.com'],
