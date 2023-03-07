@@ -9,6 +9,7 @@ import { DescriptionComponent } from './sectionComponents/description/descriptio
 import { TechnicalComponent } from './sectionComponents/technical/technical.component';
 import { EducationalComponent } from './sectionComponents/educational/educational.component';
 import { EmploymentComponent } from './sectionComponents/employment/employment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EmploymentComponent } from './sectionComponents/employment/employment.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
