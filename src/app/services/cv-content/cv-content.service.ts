@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ContentItem } from 'src/app/sectionComponents/content-item';
 import { DescriptionComponent } from 'src/app/sectionComponents/description/description.component';
-import { EducationalComponent } from 'src/app/sectionComponents/educational/educational.component';
+import { EducationComponent } from 'src/app/sectionComponents/education/education.component';
 import { EmploymentComponent } from 'src/app/sectionComponents/employment/employment.component';
 
 @Injectable({
@@ -53,7 +53,7 @@ export class CvContentService {
           domain: 'Other',
           knowledge: ['MQL, C++, Ruby, Ruby on Rails']
         }]}),
-        education: new ContentItem('Education', EducationalComponent, { educationalContent: [{
+        education: new ContentItem('Education', EducationComponent, { educationContent: [{
           yearStarted: 1999,
           yearFinished: 2004,
           Accreditation: 'BSc Applied Computing',

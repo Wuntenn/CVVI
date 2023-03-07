@@ -6,6 +6,6 @@ import { sectionContent } from '../section-content.component';
   templateUrl: './employment.component.html',
   styleUrls: ['./employment.component.sass']
 })
-export class EmploymentComponent {
+export class EmploymentComponent implements sectionContent {
   @Input() sectionContent: any;
 }
