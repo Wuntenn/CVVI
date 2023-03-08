@@ -1,9 +1,42 @@
 .lvl0-card
     max-width: 400px
+    height: 70px
 
 .cv-grid
     display: grid
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: repeat(9, 1fr)
+    background-color: #f2f2f2
+    padding: 15px
     column-gap: 20px
     row-gap: 15px
+    grid-auto-flow: row
+    
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: min-content
+    justify-items: center
+
+
+
+    @media(min-width: 500px)
+        padding: 15px 30px 0 15px
+        grid-template-columns: 50% 50% 
+        justify-items: inherit
+
+    @media (min-width: 850px)
+        padding: 15px 20px 0 15px
+        grid-template-columns: 30% 30% auto
+        justify-items: inherit
+
+    @media (min-width: 1100px)
+        padding: 15px 20px 0 15px
+        grid-template-columns: 25% 25% 25% auto
+        justify-items: inherit
+
+    @media (min-width: 1650px)
+        padding: 15px 20px 0 15px
+        grid-template-columns: 20% 20% 20% 20% auto
+        justify-items: inherit
+    
+    @media (min-width: 1979px)
+        padding: 15px 20px 0 15px
+        grid-template-columns: 16% 16% 16% 16% 16% auto
+        justify-items: inherit
