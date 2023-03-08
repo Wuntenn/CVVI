@@ -1,3 +1,4 @@
 export interface sectionContent {
-    sectionContent: any
+    sectionContent: any;
+    title: string;
 } 

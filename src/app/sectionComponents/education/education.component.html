@@ -1,1 +1,14 @@
-<p>education works!</p>
+<h1>{{title}}</h1>
+<div *ngFor="let education of sectionContent.educationContent">
+    <div>
+        <span>{{education.yearStarted}} </span> 
+    </div>
+    <div>
+        <span>{{education.yearFinished}} </span>
+    <div>
+        <span>{{education.accreditation}}</span>
+    </div>
+    <div>
+        <span>{{education.establishment}}</span>
+    </div>
+</div>

@@ -13,6 +13,7 @@ export class CvContentService {
     return {
       version: 'v0.0.1',
       cvOwner: 'Daron Jones',
+      photo: 'assets/selfi_.jpg',
       contactDetails: {
         websites: ['https://www.daronjones.com', 'https://www.linkedin.com/in/daronjones'],
         emails: ['daronalerts@gmail.com'],
@@ -57,18 +58,18 @@ export class CvContentService {
         education: new ContentItem('Education', EducationComponent, { educationContent: [{
           yearStarted: 1999,
           yearFinished: 2004,
-          Accreditation: 'BSc Applied Computing',
-          Establishment: 'Middlesex University, London',
+          accreditation: 'BSc Applied Computing',
+          establishment: 'Middlesex University, London',
         },{
           yearStarted: 1997,
           yearFinished: 1999,
-          Accreditation: 'BSc Applied Computing',
-          Establishment: 'Middlesex University, London',
+          accreditation: 'BSc Applied Computing',
+          establishment: 'Middlesex University, London',
         },{
           yearStarted: 1991,
           yearFinished: 1997,
-          Accreditation: 'BSc Applied Computing',
-          Establishment: 'Middlesex University, London',
+          accreditation: 'BSc Applied Computing',
+          establishment: 'Middlesex University, London',
         }]}),
         personal: new ContentItem('Personal', DescriptionComponent, { descriptionContent: [
           'Autodidact and artist with hobbies including illustration, 3D, music- production, Forex and Arduino.',
@@ -92,7 +93,7 @@ export class CvContentService {
         }, {
           tenureBegan: new Date(2020, 5),
           tenureEnded: new Date(2021, 8),
-          employer: '',
+          employer: 'Self-Directed Project',
           position: 'Arduino Developer',
           responsibilities: [
             'Learning Arduino development to create a product (coming soon!)',
@@ -124,7 +125,7 @@ export class CvContentService {
         }, {
           tenureBegan: new Date(2015, 7),
           tenureEnded: new Date(2017, 5),
-          employer: '',
+          employer: 'Self-Directed Project',
           position: 'MEAN Stack Developer',
           responsibilities: [
             'Working full-time on a time-management web application',
@@ -144,7 +145,7 @@ export class CvContentService {
         }, {
           tenureBegan: new Date(2014, 5),
           tenureEnded: new Date(2015, 3),
-          employer: '',
+          employer: 'Self-Directed Project',
           position: 'DevOps Developer',
           responsibilities: [
             'Learning and documenting Puppet best practice',
@@ -187,7 +188,7 @@ export class CvContentService {
         }, {
           tenureBegan: new Date(2011, 5),
           tenureEnded: new Date(2012, 4),
-          employer: '',
+          employer: 'Self-Directed Project',
           position: 'iPhone Application Developer',
           responsibilities: [
             'Working on an iPhone application for SMART task management',
@@ -207,7 +208,7 @@ export class CvContentService {
           tenureBegan: new Date(2011, 3),
           tenureEnded: new Date(2011, 4),
           employer: 'Design Portfolio Online Services (DPOS) – Web Developer',
-          position: '',
+          position: 'Web Developer',
           responsibilities: [
             'Creating templates with HTML, CSS, JQuery and PHP from designs',
           ]
@@ -215,14 +216,14 @@ export class CvContentService {
           tenureBegan: new Date(2010, 10),
           tenureEnded: new Date(2011, 1),
           employer: 'Artlogic Media Ltd – Web Developer',
-          position: '',
+          position: 'Web Developer',
           responsibilities: [
             'Creating templates with HTML, CSS, JQuery, Python, and Pylons',
           ]
         }, {
           tenureBegan: new Date(2006, 2),
           tenureEnded: new Date(2008, 7),
-          employer: '',
+          employer: 'Self-Directed Project',
           position: 'Server Administrator',
           responsibilities: [
             'Set up IPTables, nginx, Mongrel and FCGi cluster',

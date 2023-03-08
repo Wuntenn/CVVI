@@ -1,1 +1,18 @@
-<p>employment works!</p>
+<h1>{{title}}</h1>
+<div *ngFor="let employment of sectionContent.employmentContent">
+    <div>
+        <span>{{employment.tenureBegan | date : 'MMM YYYY' }} </span> - 
+        <span>{{employment.tenureEnded | date : 'MMM YYYY' }} </span>
+    </div>
+    <div>
+        <span>{{employment.employer}}</span>
+    </div>
+    <div>
+        <span>{{employment.position}}</span>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let responsibility of employment.responsibilities">{{responsibility}}</li>
+        </ul>
+    </div>
+</div>
