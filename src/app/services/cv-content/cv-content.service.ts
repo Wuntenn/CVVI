@@ -27,7 +27,7 @@ export class CvContentService {
           'Enjoys working outside of comfort zone and regularly takes on private projects to explore new ideas and concepts.',
           'Interested in increasing exposure with AWS, Software Architecture, Cloud Infrastructure and scaling.'
         ], photo: 'assets/selfi_.jpg', altText: 'Picture of Daron looking out into the distance. He is wearing a greyshirt, the room is mostly grey'}),
-        technical: new ContentItem('Technical', TechnicalComponent, { technicalContent: [{
+        technical: new ContentItem('Technical Skills', TechnicalComponent, { technicalContent: [{
           domain: 'JavaScript (JS)',
           knowledge: ['OO JavaScript', 'ES5', 'ES6']
         }, {
