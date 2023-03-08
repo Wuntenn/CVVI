@@ -3,6 +3,7 @@ import { ContentItem } from 'src/app/sectionComponents/content-item';
 import { DescriptionComponent } from 'src/app/sectionComponents/description/description.component';
 import { EducationComponent } from 'src/app/sectionComponents/education/education.component';
 import { EmploymentComponent } from 'src/app/sectionComponents/employment/employment.component';
+import { TechnicalComponent } from 'src/app/sectionComponents/technical/technical.component';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +26,7 @@ export class CvContentService {
           'Enjoys working outside of comfort zone and regularly takes on private projects to explore new ideas and concepts.',
           'Interested in increasing exposure with AWS, Software Architecture, Cloud Infrastructure and scaling.'
         ]}),
-        technical: new ContentItem('Technical', DescriptionComponent, { technicalContent: [{
+        technical: new ContentItem('Technical', TechnicalComponent, { technicalContent: [{
           domain: 'JavaScript (JS)',
           knowledge: ['OO JavaScript', 'ES5', 'ES6']
         }, {
@@ -76,9 +77,9 @@ export class CvContentService {
           'Has been learning Forex trading for the past 3 years with a view to investing. In the process has developed a few Expert Advisors in MetaTrader that are able to execute unassisted trades.',
           'Working on his mind with meditation following the guide from the book: The Mind Illuminated by Culadasa (John Yates)',
           'Fits the Myer-Briggs personality profile INFJ comprising only 1% of the population. (see: https://bit.ly/369u6K1).',
-          'Would be a great addition to a diverse, detail-oriented, creative team!',
+          'Would be a great addition to a diverse, detail-oriented, creative team!'
         ]}),
-        employments: new ContentItem('Employment Summary', EmploymentComponent, { employmentContent: [{
+        employment: new ContentItem('Employment Summary', EmploymentComponent, { employmentContent: [{
           tenureBegan: new Date(2021, 8),
           tenureEnded: new Date(2023, 1),
           employer: 'Asite Solutions Ltd',

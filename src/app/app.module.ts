@@ -13,10 +13,11 @@ import { EmploymentComponent } from './sectionComponents/employment/employment.c
 import { TechnicalComponent } from './sectionComponents/technical/technical.component';
 
 // Directives
-import { DescriptionDirective } from './sectionComponents/description/description.directive';
-import { EducationDirective } from './sectionComponents/education/education.directive';
-import { EmploymentDirective } from './sectionComponents/employment/employment.directive';
-import { TechnicalDirective } from './sectionComponents/technical/technical.directive';
+import { SummaryDirective } from './sectionDirectives/summary/summary.directive';
+import { TechnicalDirective } from './sectionDirectives/technical/technical.directive';
+import { EducationDirective } from './sectionDirectives/education/education.directive';
+import { EmploymentDirective } from './sectionDirectives/employment/employment.directive';
+import { PersonalDirective } from './sectionDirectives/personal/personal.directive';
 
 // Angular material toolbar
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,13 +29,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     CvComponent,
     PageNotFoundComponent,
     DescriptionComponent,
-    TechnicalComponent,
     EducationComponent,
     EmploymentComponent,
-    EmploymentDirective,
-    DescriptionDirective,
+    TechnicalComponent,
+    SummaryDirective,
+    TechnicalDirective,
     EducationDirective,
-    TechnicalDirective
+    EmploymentDirective,
+    PersonalDirective
   ],
   imports: [
     BrowserModule,
