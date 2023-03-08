@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { sectionContent } from '../section-content.component';
 
 @Component({
@@ -6,11 +6,8 @@ import { sectionContent } from '../section-content.component';
   templateUrl: './description.component.html',
   styleUrls: ['./description.component.sass']
 })
-export class DescriptionComponent implements sectionContent, OnInit {
+export class DescriptionComponent implements sectionContent {
   @Input() title: string = '';
   @Input() sectionContent: any;
 
-  ngOnInit() {
-    console.log('stuff: ', this.sectionContent);
-  }
 }

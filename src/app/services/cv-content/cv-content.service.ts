@@ -26,7 +26,7 @@ export class CvContentService {
           'Has a focus on emerging web standards and technologies. Maintains a proactive approach to keeping informed with the latest changes.',
           'Enjoys working outside of comfort zone and regularly takes on private projects to explore new ideas and concepts.',
           'Interested in increasing exposure with AWS, Software Architecture, Cloud Infrastructure and scaling.'
-        ]}),
+        ], photo: 'assets/selfi_.jpg', altText: 'Picture of Daron looking out into the distance. He is wearing a greyshirt, the room is mostly grey'}),
         technical: new ContentItem('Technical', TechnicalComponent, { technicalContent: [{
           domain: 'JavaScript (JS)',
           knowledge: ['OO JavaScript', 'ES5', 'ES6']
@@ -59,17 +59,17 @@ export class CvContentService {
           yearStarted: 1999,
           yearFinished: 2004,
           accreditation: 'BSc Applied Computing',
-          establishment: 'Middlesex University, London',
+          establishment: '(Middlesex University, London)',
         },{
           yearStarted: 1997,
           yearFinished: 1999,
-          accreditation: 'BSc Applied Computing',
-          establishment: 'Middlesex University, London',
+          accreditation: 'A-levels: Math, Physics',
+          establishment: '(IT Suffolk College, Ipswich)',
         },{
           yearStarted: 1991,
           yearFinished: 1997,
-          accreditation: 'BSc Applied Computing',
-          establishment: 'Middlesex University, London',
+          accreditation: '7x Grade A-C GCSE',
+          establishment: '(Northgate High School, Ipswich)',
         }]}),
         personal: new ContentItem('Personal', DescriptionComponent, { descriptionContent: [
           'Autodidact and artist with hobbies including illustration, 3D, music- production, Forex and Arduino.',
@@ -79,7 +79,7 @@ export class CvContentService {
           'Working on his mind with meditation following the guide from the book: The Mind Illuminated by Culadasa (John Yates)',
           'Fits the Myer-Briggs personality profile INFJ comprising only 1% of the population. (see: https://bit.ly/369u6K1).',
           'Would be a great addition to a diverse, detail-oriented, creative team!'
-        ]}),
+        ], photo: 'assets/music.jpeg', altText: 'Picture of some musical notes'}),
         employment: new ContentItem('Employment Summary', EmploymentComponent, { employmentContent: [{
           tenureBegan: new Date(2021, 8),
           tenureEnded: new Date(2023, 1),

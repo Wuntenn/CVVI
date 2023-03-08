@@ -22,6 +22,12 @@ import { PersonalDirective } from './sectionDirectives/personal/personal.directi
 // Angular material toolbar
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
@@ -36,13 +42,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     TechnicalDirective,
     EducationDirective,
     EmploymentDirective,
-    PersonalDirective
+    PersonalDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule  
+    MatToolbarModule,
+    MatCardModule,
+    MatDividerModule,
+    MatProgressBarModule,
+    MatChipsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

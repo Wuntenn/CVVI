@@ -1,2 +1,9 @@
-<h1>{{title}}</h1>
-<p *ngFor="let elRow of sectionContent.descriptionContent">{{elRow}}</p>
+<mat-card class="description-card">
+    <mat-card-header>
+      <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{sectionContent.photo}}" alt="{{sectionContent.altText}}">
+    <mat-card-content>
+        <p *ngFor="let elRow of sectionContent.descriptionContent">{{elRow}}</p>
+    </mat-card-content>
+  </mat-card>

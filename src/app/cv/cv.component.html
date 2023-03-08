@@ -1,12 +1,25 @@
-<p>cv works!</p>
-<img
-  src="{{content.photo}}"
-  alt="picture of Daron Jones. The shot is angled to add interest. He looks out
-  into the distance. The room, his clothes, and much of the decor is grey."
-  height="300px"
->
-<ng-template cVVISummary></ng-template>
-<ng-template cVVITechnical></ng-template>
-<ng-template cVVIEmployment></ng-template>
-<ng-template cVVIPersonal></ng-template>
-<ng-template cVVIEducation></ng-template>
+<div class="cv-grid">
+  <mat-card class="lvl0-card">
+    <mat-card-header>
+      <mat-card-title>{{content.cvOwner}}</mat-card-title>
+      <mat-card-subtitle>CV Version: {{content.version}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+
+
+  <ng-template cVVISummary></ng-template>
+  <ng-template cVVITechnical></ng-template>
+  <ng-template cVVIEmployment></ng-template>
+  <ng-template cVVIPersonal></ng-template>
+  <ng-template cVVIEducation></ng-template>
+</div>
+
+
+  <!--mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile-->

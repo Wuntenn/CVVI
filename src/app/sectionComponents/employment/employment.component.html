@@ -1,18 +1,13 @@
 <h1>{{title}}</h1>
-<div *ngFor="let employment of sectionContent.employmentContent">
-    <div>
-        <span>{{employment.tenureBegan | date : 'MMM YYYY' }} </span> - 
-        <span>{{employment.tenureEnded | date : 'MMM YYYY' }} </span>
-    </div>
-    <div>
-        <span>{{employment.employer}}</span>
-    </div>
-    <div>
-        <span>{{employment.position}}</span>
-    </div>
-    <div>
-        <ul>
-            <li *ngFor="let responsibility of employment.responsibilities">{{responsibility}}</li>
-        </ul>
-    </div>
-</div>
+<mat-card *ngFor="let employment of sectionContent.employmentContent" class="employment-card">
+  <mat-card-header>
+    <mat-card-title>{{employment.tenureBegan | date:'MMM YYYY'}} - {{employment.tenureEnded | date : 'MMM YYYY'
+      }}</mat-card-title>
+    <mat-card-subtitle>{{employment.employer}}: {{employment.position}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let responsibility of employment.responsibilities">{{responsibility}}</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
