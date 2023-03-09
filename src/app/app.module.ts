@@ -11,6 +11,7 @@ import { DescriptionComponent } from './sectionComponents/description/descriptio
 import { EducationComponent } from './sectionComponents/education/education.component';
 import { EmploymentComponent } from './sectionComponents/employment/employment.component';
 import { TechnicalComponent } from './sectionComponents/technical/technical.component';
+import { ContactComponent } from './sectionComponents/contact/contact.component';
 
 // Directives
 import { SummaryDirective } from './sectionDirectives/summary/summary.directive';
@@ -18,6 +19,7 @@ import { TechnicalDirective } from './sectionDirectives/technical/technical.dire
 import { EducationDirective } from './sectionDirectives/education/education.directive';
 import { EmploymentDirective } from './sectionDirectives/employment/employment.directive';
 import { PersonalDirective } from './sectionDirectives/personal/personal.directive';
+import { ContactDirective } from './sectionDirectives/contact/contact.directive';
 
 // Angular material toolbar
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,11 +40,13 @@ import {MatGridListModule} from '@angular/material/grid-list';
     EducationComponent,
     EmploymentComponent,
     TechnicalComponent,
+    ContactComponent,
     SummaryDirective,
     TechnicalDirective,
     EducationDirective,
     EmploymentDirective,
     PersonalDirective,
+    ContactDirective,
   ],
   imports: [
     BrowserModule,
