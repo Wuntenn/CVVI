@@ -1,10 +1,9 @@
-<h1>{{title}}</h1>
 <mat-card class="technical-card">
   <mat-card-content>
-    <div *ngFor="let domain of sectionContent.technicalContent" class="skill">
-      <span><strong>{{domain.domain}}</strong></span>
+    <div class="skill">
+      <span><strong>{{sectionContent.domain}}</strong></span>
       <mat-chip-listbox aria-label="Fish selection">
-        <mat-chip-option *ngFor="let skill of domain.knowledge">{{skill}}</mat-chip-option>
+        <mat-chip-option *ngFor="let skill of sectionContent.knowledge">{{skill}}</mat-chip-option>
       </mat-chip-listbox>
     </div>
   </mat-card-content>

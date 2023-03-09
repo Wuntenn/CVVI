@@ -1,9 +1,9 @@
 <mat-card class="description-card">
-    <mat-card-header>
-      <mat-card-title>{{title}}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{sectionContent.photo}}" alt="{{sectionContent.altText}}">
-    <mat-card-content>
-        <p *ngFor="let elRow of sectionContent.descriptionContent">{{elRow}}</p>
-    </mat-card-content>
-  </mat-card>
+  <mat-card-header>
+    <mat-card-title>{{sectionContent.sectionTitle}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{sectionContent.photo.path}}" alt="{{sectionContent.photo.altText}}">
+  <mat-card-content>
+      <p *ngFor="let elRow of sectionContent.content">{{elRow}}</p>
+  </mat-card-content>
+</mat-card>

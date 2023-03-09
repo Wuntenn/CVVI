@@ -1,13 +1,12 @@
-<h1>{{title}}</h1>
-<mat-card  *ngFor="let education of sectionContent.educationContent" class="education-card">
-    <mat-card-header>
-      <mat-card-subtitle><span>{{education.yearStarted}} </span> - <span>{{education.yearFinished}} </span></mat-card-subtitle>
-         
-      <mat-card-title><span>{{education.accreditation}}</span></mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <span>{{education.establishment}}</span>
-    </mat-card-content>
-    <mat-card-footer>
-    </mat-card-footer>
-  </mat-card>
+<mat-card class="education-card">
+  <mat-card-header>
+    <mat-card-subtitle><span>{{sectionContent.yearStarted}} </span> - <span>{{sectionContent.yearFinished}} </span></mat-card-subtitle>
+        
+    <mat-card-title><span>{{sectionContent.accreditation}}</span></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <span>{{sectionContent.establishment}}</span>
+  </mat-card-content>
+  <mat-card-footer>
+  </mat-card-footer>
+</mat-card>

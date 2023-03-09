@@ -7,6 +7,5 @@ import { sectionContent } from '../section-content.component';
   styleUrls: ['./employment.component.sass']
 })
 export class EmploymentComponent implements sectionContent {
-  @Input() title: string = '';
   @Input() sectionContent: any;
 }

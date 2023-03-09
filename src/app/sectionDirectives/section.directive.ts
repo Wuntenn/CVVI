@@ -1,5 +1,8 @@
-import { ViewContainerRef } from '@angular/core';
+import { Directive, ViewContainerRef } from '@angular/core';
 
-export interface SectionDirective {
-    viewContainerRef: ViewContainerRef
-} 
+@Directive({
+  selector: '[cVVISection]'
+})
+export class SectionDirective {
+  constructor(public viewContainerRef: ViewContainerRef) {}
+}
